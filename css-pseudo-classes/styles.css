@@ -10,17 +10,18 @@ button {
 button:hover {
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
-thead {
+th {
   color: white;
   background-color: black;
 }
 
-tr.grayBackground {
-  background: rgb(214, 210, 210);
+tr:nth-child(even) {
+  background: rgb(255, 255, 255);
 }
 
-tr.lightgrayBackground {
-  background: lightgray;
+tr:nth-child(odd) {
+  background-color: lightgray;
 }
