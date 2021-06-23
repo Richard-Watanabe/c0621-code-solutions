@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  font-size: 30px;
+  padding: 10px 35px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+thead {
+  color: white;
+  background-color: black;
+}
+
+tr.grayBackground {
+  background: rgb(214, 210, 210);
+}
+
+tr.lightgrayBackground {
+  background: lightgray;
+}
