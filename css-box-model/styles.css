@@ -1,0 +1,21 @@
+button.language {
+  font-size: 24px;
+  background-color: lightgray;
+
+  /* your code here 👇 */
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 6px 16px;
+  border-radius: 6px;
+}
+
+/* Recommendation from Paul Irish */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
