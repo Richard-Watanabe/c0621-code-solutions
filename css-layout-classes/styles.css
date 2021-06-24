@@ -14,18 +14,14 @@
 }
 
 .column-one-third {
-  display: flex;
-  flex-direction: column;
   width: calc(100% / 3);
 }
 
 .column-one-fourth {
-  display: flex;
+  width: 100%;
 }
 
 .column-two-third {
-  display: flex;
-  flex-direction: column;
   width: calc(100% - calc(100% / 3));
 }
 
