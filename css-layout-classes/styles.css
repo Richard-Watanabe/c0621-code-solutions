@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.row {
+  display: flex;
+}
+
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column-one-third {
+  width: calc(100% / 3);
+}
+
+.column-one-fourth {
+  width: 100%;
+}
+
+.column-two-third {
+  width: calc(100% - calc(100% / 3));
+}
+
+img {
+  width: 100%;
+}
