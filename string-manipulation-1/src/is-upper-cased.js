@@ -11,4 +11,4 @@ function isUpperCased(word) {
   }
 }
 
-isUpperCased('PHP');
+isUpperCased('Cody');
