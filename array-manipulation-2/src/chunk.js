@@ -5,9 +5,6 @@ function chunk(array, size) {
   var finalArray = [];
   for (var i = 0; i < size; i++) {
     newArray.push(array[i]);
-    for (var j = 0; j < array.length; j++) {
-      finalArray.push(newArray[j]);
-    }
   }
   return finalArray;
 }
