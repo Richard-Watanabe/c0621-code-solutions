@@ -35,6 +35,6 @@ h1 {
   border-bottom: solid 3px black;
 }
 
-.margin-right {
-  margin-right: 10px;
+.space {
+  padding-right: 20px;
 }
