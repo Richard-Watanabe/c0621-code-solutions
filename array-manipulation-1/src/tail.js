@@ -1,8 +1,7 @@
 /* exported tail */
 
 // We need a storage for the new array.
-// We need to check if the data is first or not.
-// If not, we store the data into the new array.
+// Store the data into the new array except the first data.
 // Return the new array.
 
 function tail(array) {
