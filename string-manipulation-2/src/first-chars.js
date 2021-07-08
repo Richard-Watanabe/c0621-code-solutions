@@ -3,14 +3,14 @@
 // Prepare a empty string as storage for the final output.
 // Check each letter in the string passed in.
 // Update the storage with the number letters of the length passed in.
-// If there are undefined letters, return the string as is.
+// If the length parameter is larger than the characters in the string, return the string as is.
 // If not, return the stored string.
 
 function firstChars(length, string) {
   var newString = '';
   for (var i = 0; i < length; i++) {
     newString += string[i];
-    if (string[i] === undefined) {
+    if (string.length < length) {
       newString = string;
     }
   }
