@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 10rem auto;
+  width: 40rem;
+}
+
+span {
+  border-bottom: 1px;
+}
+
+h1 {
+  margin-left: 1rem;
+  word-spacing: -5px;
+}
+
+.green {
+  color: rgb(25, 205, 27);
+}
+
+.red {
+  color: red;
+}
+
+.border-bottom {
+  padding-bottom: 4px;
+  border-bottom: solid 3px black;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
