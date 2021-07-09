@@ -8,9 +8,9 @@ function pick(source, keys) {
   var newObject = {};
   for (var i = 0; i < keys.length; i++) {
     for (var key in source) {
-      var property = source[key];
-      if (key === keys[i] && property !== undefined) {
-        newObject[keys[i]] = property;
+      var value = source[key];
+      if (key === keys[i] && value !== undefined) {
+        newObject[keys[i]] = value;
       }
     }
   }

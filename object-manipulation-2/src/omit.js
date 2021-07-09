@@ -9,18 +9,15 @@
 function omit(source, keys) {
   var newObject = {};
   for (var i = 0; i < keys.length; i++) {
-    for (var key in source) {
-      var property = source[key];
-      if (key === keys[i]) {
-        return;
-      } else {
-        newObject[key] = property;
+    for (var property in source) {
+      if (keys[i] !== property) {
+        var value = source[property];
+        newObject[property] = value;
+        return newObject;
       }
     }
   }
-  return newObject;
 }
 
-omit({ foo: 1, bar: 2, baz: 3 }, ['foo', 'baz']); // -> { bar: 2 }
 omit({ qux: 4, corge: 5 }, ['bar', 'grault']); // -> { qux: 4, corge: 5 }
 omit({}, ['foo', 'bar', 'baz']); // -> {}
