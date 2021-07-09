@@ -4,7 +4,8 @@ var letterIndex = 0;
 
 function check(event) {
   if (event.key === $letter[letterIndex].textContent) {
-    $letter[letterIndex].className = 'green border-bottom';
+    $letter[letterIndex].className = 'green';
+    $letter[letterIndex + 1].className = 'border-bottom';
     letterIndex++;
   } else {
     $letter[letterIndex].className = 'red border-bottom';
