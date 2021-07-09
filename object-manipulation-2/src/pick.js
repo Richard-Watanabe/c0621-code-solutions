@@ -1,24 +1,20 @@
 /* exported pick */
 
 // We need a storage for the new object.
-// We need to check if the keys[i] is equal to any of the properties in source.
-// If it is, return the property with the value.
-// If not, return an empty array.
+// We need to check if the any of the data in the keys array are equal to any of the properties in source, and also make sure the property is not undefined.
+// If they pass, return the property with the value.
 
 function pick(source, keys) {
   var newObject = {};
-  for (var key in source) {
-    var property = source[key];
-    for (var i = 0; i < keys.length; i++) {
-      if (key === keys[i]) {
-        newObject.keys[i] = property;
-      } else {
-        return newObject;
+  for (var i = 0; i < keys.length; i++) {
+    for (var key in source) {
+      var property = source[key];
+      if (key === keys[i] && property !== undefined) {
+        newObject[keys[i]] = property;
       }
     }
   }
+  return newObject;
 }
 
-pick({ foo: 1, bar: 2, baz: 3 }, ['foo', 'baz']); // -> { foo: 1, baz: 3 }
-pick({ qux: 4, corge: 5 }, ['bar', 'grault']); // -> {}
-pick({ bar: 2 }, ['foo', 'bar', 'baz']); // -> { bar: 2 }
+pick({ foo: null, bar: 0, baz: undefined }, ['foo', 'bar', 'baz']);
