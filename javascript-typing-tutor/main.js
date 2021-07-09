@@ -12,6 +12,4 @@ function check(event) {
   }
 }
 
-for (var i = 0; i < $letter.length; i++) {
-  $body.addEventListener('keydown', check);
-}
+$body.addEventListener('keydown', check);
