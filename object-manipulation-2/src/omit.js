@@ -1,23 +1,22 @@
 /* exported omit */
 
 // We need a storage for the new object.
-// We need to check if each property in source is equal to the data in the array.
-// If they are, return nothing.
-// If they are not, store in the pair in the storage.
+// Store each property value pair of source.
+// Delete properties that are included in the keys array.
 // Return the storage.
 
 function omit(source, keys) {
   var newObject = {};
-  for (var i = 0; i < keys.length; i++) {
-    for (var property in source) {
-      if (keys[i] !== property) {
-        var value = source[property];
-        newObject[property] = value;
-        return newObject;
-      }
+  for (var property in source) {
+    for (var i = 0; i < keys.length; i++) {
+      var value = source[property];
+      newObject[property] = value;
+      delete newObject[keys[i]];
     }
   }
+  return newObject;
 }
 
+omit({ foo: 1, bar: 2, baz: 3 }, ['foo', 'baz']); // -> { bar: 2 }
 omit({ qux: 4, corge: 5 }, ['bar', 'grault']); // -> { qux: 4, corge: 5 }
 omit({}, ['foo', 'bar', 'baz']); // -> {}
