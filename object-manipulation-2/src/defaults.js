@@ -5,9 +5,7 @@
 
 function defaults(target, source) {
   for (var property in source) {
-    if (property === 'qux') {
-      target[property] = source[property];
-    } else {
+    if (property !== target[property]) {
       target[property] = source[property];
     }
   }
