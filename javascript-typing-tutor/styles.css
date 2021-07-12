@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Courier Prime', monospace;
+  font-size: 1.8rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 10rem auto;
+  width: 40rem;
+}
+
+.green {
+  color: rgb(25, 205, 27);
+}
+
+.red {
+  color: red;
+}
+
+.border-bottom {
+  padding-bottom: 4px;
+  border-bottom: solid 3px black;
+}
