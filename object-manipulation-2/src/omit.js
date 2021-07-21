@@ -8,9 +8,9 @@
 function omit(source, keys) {
   var newObject = {};
   for (var property in source) {
+    var value = source[property];
+    newObject[property] = value;
     for (var i = 0; i < keys.length; i++) {
-      var value = source[property];
-      newObject[property] = value;
       delete newObject[keys[i]];
     }
   }
