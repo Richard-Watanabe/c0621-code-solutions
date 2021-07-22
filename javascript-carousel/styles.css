@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+i {
+  margin: 0.3rem;
+  cursor: pointer;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 1rem 2rem;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.arrow-left {
+  font-size: 5rem;
+}
+
+.arrow-left:active {
+  transform: scale(0.9);
+}
+
+.arrow-right {
+  font-size: 5rem;
+}
+
+.arrow-right:active {
+  transform: scale(0.9);
+}
+
+.hidden {
+  display: none;
+}
