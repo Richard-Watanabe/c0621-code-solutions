@@ -18,18 +18,3 @@ function equal(first, second) {
 }
 
 equal(['foo', 'bar', 'baz'], ['foo', 'bar', 'qux']);
-// -> true
-
-//   var newFirst = first.join('');
-//   var newSecond = second.join('');
-//   for (var property in first) {
-//     if (!second[property]) {
-//       return false;
-//     }
-//   }
-//   if (newFirst === newSecond) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
