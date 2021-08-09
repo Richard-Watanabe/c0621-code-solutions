@@ -8,7 +8,7 @@
 </head>
 <body>
   <script>
-    var greetings = [
+    const greetings = [
       'hello!',
       'konichiwa!',
       'nihao',
@@ -20,6 +20,7 @@
     function logAllGreetings(greetingList) {
       let i = 0;
       while (i < greetingList.length) {
+        // eslint-disable-next-line no-console
         console.log('Current greeting:', greetingList[i]);
         i++;
       }
@@ -34,6 +35,7 @@
       }
       return greeting;
     }
+    // eslint-disable-next-line no-console
     console.log('Random greeting:', getRandomGreeting(greetings));
 
     function addToGreetings(newGreeting, greetingList) {
@@ -42,6 +44,7 @@
     addToGreetings('namaste', greetings);
     logAllGreetings(greetings);
     const variable = 'meow';
+    // eslint-disable-next-line no-console
     console.log('This variable is currently undefined due to hoisting, please fix: ', variable);
   </script>
 </body>
