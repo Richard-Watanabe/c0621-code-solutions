@@ -1,0 +1,477 @@
+    1  exit
+    2  whoami
+    3  git config --global user.name "Richard Watanabe"
+    4  git config --global user.email "shoryuwatanabe124@gmail.com"
+    5  git config --global --list
+    6  cd repos/c0621-code-solutions/http-messages
+    7  git branch http-messages
+    8  git switch http-messages
+    9  http http://www.example.com
+   10  http --verbose http://www.example.com
+   11  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+   12  http --body GET https://example.com > index.html
+   13  git status
+   14  git add index.html
+   15  git add users.json
+   16  git commit -m "Completed http-messages"
+   17  git push origin http-messages
+   18  git checkout master
+   19  git pull origin master
+   20  cd
+   21  cd repos/c0621-code-solutions/
+   22  git branch javascript-ajax
+   23  git switch javascript-ajax
+   24  git status
+   25  git add javascript-ajax
+   26  git commit -m "Completed javascript-ajax"
+   27  git push origin javascript-ajax
+   28  git checkout master
+   29  git status
+   30  git pull origin master
+   31  git status
+   32  git switch javscript-ajax
+   33  git switch javascript-ajaz
+   34  git switch javascript-ajax
+   35  git status
+   36  git checkout master
+   37  cd
+   38  repos/c0621-code-solutions/http-messages
+   39  cd repos/c0621-code-solutions/http-messages
+   40  git pull origin master
+   41  git status
+   42  git switch http-messages
+   43  git status
+   44  git add .gitkeep
+   45  git add .npmrc
+   46  git add .stylelintrc
+   47  git commit -m "Added untracked files"
+   48  git status
+   49  cd
+   50  cd repos/c0621-code-solutions/
+   51  git checkout master
+   52  git status
+   53  git pull origin master
+   54  cd
+   55  cd repos/c0621-code-solutions/http-messages
+   56  git status
+   57  git switch http-messages
+   58  git push origin http-messages
+   59  cd
+   60  cd repos/c0621-code-solutions/
+   61  git checkout master
+   62  git status
+   63  cd
+   64  cd repos/code-journal/
+   65  git switch issue-4-user-can-delete-an-entry
+   66  git checkout master
+   67  cd
+   68  cd repos/c0621-code-solutions/
+   69  git status
+   70  git switch string-manipulation-3
+   71  git status
+   72  git add string-manipulation
+   73  git add string-manipulation-3
+   74  git commit -m "In progress, last question"
+   75  git push origin master
+   76  git checkout master
+   77  git branch array-manipulation-3
+   78  git switch array-manipulation-3
+   79  git status
+   80  git add array-manipulation-3
+   81  git commit -m "In progress, unique"
+   82  git push origin array-manipulation-3
+   83  cd
+   84  repos/code-journal/
+   85  cd repos/code-journal/
+   86  git switch issue-4-user-can-delete-an-entry
+   87  git checkout master
+   88  cd
+   89  cd repos/c0621-code-solutions/
+   90  git status
+   91  git add array-manipulation-3
+   92  git commit -m "In progress"
+   93  git push origin array-manipulation-3
+   94  git status
+   95  cd repos/c0621-code-solutions/
+   96  git branch http-messages
+   97  git branch -d http-messages
+   98  cd repos/c0621-code-solutions/
+   99  git switch array-manipulation-3
+  100  git status
+  101  git add array-manipulation-3
+  102  git commit -m "Solved intersection"
+  103  git push origin array-manipulation-3
+  104  git status
+  105  git add array-manipulation-3
+  106  git commit -m "In progress, union"
+  107  git push origin array-manipulation-3
+  108  git status
+  109  git add array-manipulation-3
+  110  git commmit -m "Finished union"
+  111  git status
+  112  git commit -m "Finished union"
+  113  git push origin array-manipulation-3
+  114  git status
+  115  git add array-manipution-3
+  116  git add array-manipulation-3
+  117  git commit -m "Completed array-manipulation-3"
+  118  git push origin array-manipulation-3
+  119  git status
+  120  git add array-manipulation-3
+  121  git commit -m "Deleted unnecessary comments in 'equal'"
+  122  git push origin master
+  123  git status
+  124  git push origin array-manipulation-3
+  125  git checkout master
+  126  git pull origin master
+  127  git branch object-manipulation-3
+  128  git switch object-manipulation-3
+  129  git status
+  130  git add object-manipulation-3
+  131  git commit -m "Created a collection of four objects that represents players. Each player has a unique name and a hand to hold cards in"
+  132  git push origin object-manipulation-3
+  133  git status
+  134  git checkout master
+  135  git switch string-manipulation-3
+  136  git status
+  137  git add string-manipulation-3
+  138  git commit -m "In progress, titleCase"
+  139  git push origin string-manipulation-3
+  140  git checkout master
+  141  cd
+  142  cd repos/ajax-project/
+  143  git branch code-cleanup
+  144  git switch code-cleanup
+  145  git status
+  146  git add css/styles.css
+  147  git add index.html
+  148  git commit -m "Removed div tags inside of form tags"
+  149  git push origin code-cleanup
+  150  git status
+  151  git add css/layout.css
+  152  git add css/styles.css
+  153  git add js/main.js
+  154  git commit -m "Made sure all styling in the CSS was necessary"
+  155  git push origin code-cleanup
+  156  git checkout master
+  157  git pull origin master
+  158  git branch user-interfaces
+  159  git switch user-interfaces
+  160  git status
+  161  git add css/layout.css
+  162  git add css/styles.css
+  163  git commit -m "Made application mobile, tablet, and desktop responsive"
+  164  git push origin user-interface
+  165  git push origin user-interfaces
+  166  git status
+  167  git add css/styles.css
+  168  git add index.html
+  169  git add js/main.js
+  170  git commit -m "Got loading spinners to show while waiting for AJAX request to conclude"
+  171  git push origin user-interfaces
+  172  git status
+  173  git add css/layout.css
+  174  git add css/styles.css
+  175  git add index.html
+  176  git add js/main.js
+  177  git commit -m "Added error message for no internet"
+  178  git push origin user-interfaces
+  179  git checkout master
+  180  cd
+  181  cd repos/c0621-code-solutions/
+  182  git pull origin master
+  183  git switch object-manipulation-3
+  184  git checkout master
+  185  git checkout object-manipulation-3
+  186  git status
+  187  git add object-manipulation-3
+  188  git commit -m "In progress, need to pass cards out"
+  189  git push origin object-manipulation-3
+  190  git status
+  191  git checkout master
+  192  cd
+  193  repos/ajax-project/
+  194  cd repos/ajax-project/
+  195  git pull origin master
+  196  git branch project-polish
+  197  git switch project-polish
+  198  git checkout master
+  199  git remote set-url origin git@github.com:Richard-Watanabe/my-ghibli-movie-review.git
+  200  cd ~/repos
+  201  mv <ajax-project> <my-ghibli-movie-review>
+  202  mv ajax-project my-ghibli-movie-review
+  203  cd
+  204  cd repos/my-ghibli-movie-review/
+  205  git switch project-polish
+  206  git status
+  207  git add index.html
+  208  git commit -m "Changed the title tag to the application name"
+  209  git push origin project-polish
+  210  git status
+  211  git add index.html
+  212  git commit -m "Added meta tags to make application shareable"
+  213  git push origin project-polish
+  214  git checkout master
+  215  git pull origin master
+  216  git branch issue-6-user-can-see-total-number-of-reviews
+  217  git switch issue-6-user-can-see-total-number-of-reviews
+  218  git status
+  219  git add index.html
+  220  git add js/main.js
+  221  git commit -m "Made the description go on the right on tablet and desktop screen"
+  222  git push origin issue-6-user-can-see-total-number-of-reviews
+  223  git status
+  224  git add css/styles.css
+  225  git add index.html
+  226  git add js/main.js
+  227  git commit -m "Added a modal in the home-screen to explain the app only the first time the user visits the page"
+  228  git push origin issue-6-user-can-see-total-number-of-reviews
+  229  git status
+  230  git add css/styles.css
+  231  git add index.html
+  232  git commit -m "Preserved line breaks in a user's review"
+  233  git push issue-6-user-can-see-total-number-of-reviews
+  234  git push origin issue-6-user-can-see-total-number-of-reviews
+  235  git status
+  236  git add css/layout.css
+  237  git add css/styles.css
+  238  git add index.html
+  239  git add js/main.js
+  240  git commit -m "Added a counter for the how many movies were reviewed"
+  241  git push origin issue-6-user-can-see-total-number-of-reviews
+  242  git status
+  243  git add css/styles.css
+  244  git commit -m "Added more margin between each review"
+  245  git push origin issue-6-user-can-see-total-number-of-reviews
+  246  git status
+  247  git add css/layout.css
+  248  git add css/styles.css
+  249  git commit -m "Moved layout css in styles.css to layout.css"
+  250  git push origin issue-6-user-can-see-total-number-of-reviews
+  251  git status
+  252  git add css/styles.css
+  253  git commit -m "Made sure styles.css had the correct layout classes"
+  254  git push origin issue-6-user-can-see-total-number-of-reviews
+  255  git status
+  256  git add index.html
+  257  git commit -m "Slightly changed wording of introduction modal"
+  258  git push origin issue-6-user-can-see-total-number-of-reviews
+  259  git status
+  260  git add css/styles.css
+  261  git commit -m "Added some horizontal margin on the introduction modal button"
+  262  git push origin issue-6-user-can-see-total-number-of-reviews
+  263  git checkout master
+  264  git switch issue-6-user-can-see-total-number-of-reviews
+  265  git checkout master
+  266  git switch issue-6-user-can-see-total-number-of-reviews
+  267  git status
+  268  git add css/styles.css
+  269  git commit -m "Tried making the go button smaller to fit in mobile view"
+  270  git push origin issue-6-user-can-see-total-number-of-reviews
+  271  git checkout master
+  272  git pull origin master
+  273  git branch mobile-responsiveness
+  274  git switch mobile-responsiveness
+  275  git status
+  276  git add css/styles.css
+  277  git commit -m "Made sure app was fully mobile-responsive by adding media queries to the hover pseudo class"
+  278  git push origin mobile-responsiveness
+  279  git status
+  280  git add index.html
+  281  git add css/layout.css
+  282  git add css/styles.css
+  283  git commit -m "Made sure the modals were showing clearly in mobile-view"
+  284  git push origin mobile-responsiveness
+  285  git status
+  286  git add css/layout.css
+  287  git add css/styles.css
+  288  git add js/main.js
+  289  git commit -m "Made sure layout looked professional in an iphone X screen and deleted commented code"
+  290  git push origin mobile-responsiveness
+  291  git checkout master
+  292  git pull origin master
+  293  git status
+  294  git branch button-styling
+  295  git switch button-styling
+  296  git status
+  297  git add css/styles.css
+  298  git commit -m "Added css rule to 'go' button to fix broken styling"
+  299  git push origin button-styling
+  300  git checkout master
+  301  git pull origin master
+  302  git branch webkit-styling
+  303  git switch webkit-styling
+  304  git status
+  305  git add css/styles.css
+  306  git commit -m "Added webkit-appearance styling to search bar and save button"
+  307  git push origin webkit-styling
+  308  git checkout master
+  309  git pull origin master
+  310  git status
+  311  git branch search-bar-styling
+  312  git switch search-bar-styling
+  313  git status
+  314  git add css/styles.css
+  315  git commit -m "Added styling to seach-bar for mobile responsiveness"
+  316  git push origin search-bar-styling
+  317  git checkout master
+  318  git pull origin master
+  319  git branch styling-polish
+  320  git switch styling-polish
+  321  git status
+  322  git add css/styles.css
+  323  git commit -m "Added background color to the search bar"
+  324  git push origin styling-polish
+  325  git checkout master
+  326  git pull origin master
+  327  cd
+  328  repos/c0621-code-solutions/
+  329  cd repos/c0621-code-solutions/
+  330  git switch object-manipulation-3
+  331  git status
+  332  git add object-manipulation-3
+  333  git commit -m "Completed object-manipulation-3"
+  334  git push origin object-manipulation-3
+  335  git checkout master
+  336  cd
+  337  cd repos/my-ghibli-movie-review/
+  338  git status
+  339  git branch viewport-styling-desktop
+  340  git switch viewport-styling-desktop
+  341  git status
+  342  git add css/layout.css
+  343  git commit -m "Added media query class to logo on desktop view to make it fit in viewport"
+  344  git push origin viewport-styling-desktop
+  345  git checkout master
+  346  git pull origin master
+  347  cd
+  348  cd repos/c0621-code-solutions/
+  349  git status
+  350  git swith string-manipulation-3
+  351  git switch string-manipulation-3
+  352  git status
+  353  git add string-manipulation-3
+  354  git commit -m "Completed string-manipulation-3"
+  355  git push origin string-manipulation-3
+  356  git checkout master
+  357  git checkout es6-const-let
+  358  git branch es6-const-let
+  359  git switch es6-const-let
+  360  git status
+  361  git add es6-const-let
+  362  git commit -m "Completed es6-const-let"
+  363  git push origin es6-const-let
+  364  git checkout master
+  365  git status
+  366  git switch es6-const-let
+  367  git status
+  368  git switch es6-const-let
+  369  git add es6-const-let
+  370  git stash
+  371  git switch es6-const-let
+  372  git stash pop
+  373  git status
+  374  git add es6-const-let/index.html
+  375  git commit -m "Changed var to const for the greetings"
+  376  git push origin es6-const-let
+  377  git checkout master
+  378  git branch es6-template-literals
+  379  git switch es6-template-literals
+  380  git status
+  381  git add es6-template-literals
+  382  git commit -m "Completed es6-template-literals"
+  383  git push origin es6-template-literals
+  384  git checkout master
+  385  git switch es6-template-literals
+  386  git status
+  387  git add es6-template-literals
+  388  git commit -m "Removed space in applepen"
+  389  git push origin es6-template-literals
+  390  git checkout master
+  391  git branch es6-destructuring
+  392  git switch es6-destructuring
+  393  git status
+  394  git add es6-destructuring
+  395  git commit -m "Completed es6-destructuring"
+  396  git push origin es6-destructuring
+  397  git checkout master
+  398  git pull origin master
+  399  git branch es6-arrow-functions
+  400  git switch es6-arrow-functions
+  401  git status
+  402  git add es6-arrow-functioon
+  403  git add es6-arrow-functions
+  404  git commit -m "Completed es6-arrow-functions"
+  405  git push origin es6-arrow-functions
+  406  git checkout master
+  407  git branch command-line-basics
+  408  git switch command-line-basics
+  409  pwd
+  410  git checkout master
+  411  cd command-line-basics
+  412  pwd
+  413  man man
+  414  man cat
+  415  git cat f laziness.txt
+  416  cat f laziness.txt
+  417  cat laziness.txt
+  418  cat impatience.txt
+  419  cat hubris.txt
+  420  cat laziness.txt impatience.txt hubris.txt
+  421  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  422  cat three-virtues.txt
+  423  man ls
+  424  ls 
+  425  ls -a
+  426  ls -F
+  427  man ls
+  428  ls lfz-staff
+  429  ls -a
+  430  ls -a lfz-staff
+  431  ls -F lfz-staff
+  432  ls -aF lfz-staff/ > lfz-staff/contents.txt
+  433  cat lfz-staff/contents.txt
+  434  pwd
+  435  pwd > i-was-here.txt
+  436  ls
+  437  cat i-was-here.txt
+  438  man echo
+  439  echo 'Hello, World!'
+  440  echo 'Hello, World!' > hello.txt
+  441  ls
+  442  cat hello.txt
+  443  man touch
+  444  touch tag-youre-it.txt
+  445  touch snoot/boop.txt
+  446  ls snoot/
+  447  ls -a snoot/
+  448  man mkdir
+  449  mkdir parent
+  450  ls
+  451  man mkdir
+  452  mkdir -p parent/child/grandchild
+  453  touch parent/child/grandchild/.gitkeep
+  454  ls -a
+  455  ls -aF
+  456  ls -a parent
+  457  ls -aF parent
+  458  ls -a child
+  459  ls -a parent/child
+  460  ls -a parent/child/grandparent
+  461  ls -a parent/child/grandchild
+  462  man mv
+  463  mv pokimans pokemon
+  464  mv pokiemans pokemon
+  465  ls
+  466  man rm
+  467  rm lol.txt
+  468  ls
+  469  rm -r kill-me/
+  470  ls
+  471  man cp
+  472  cp and-then.txt no-and-then.txt
+  473  ls
+  474  cat and-then.txt no-and-then.txt
+  475  man history
+  476  history
+  477  history > command-history.txt
