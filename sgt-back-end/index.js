@@ -63,13 +63,14 @@ app.put('/api/grades/:gradeId', (req, res) => {
   set "name" = $1,
       "course" = $2,
       "score" = $3
-  where "gradeId" = $4;
+  where "gradeId" = $4
+  returning *;
   `;
   const params = [newGrade.name, newGrade.course, intScore, gradeId];
   db.query(sql, params)
     .then(result => {
       const grade = result.rows[0];
-      if (!grade) {
+      if (grade) {
         return res.status(200).send(grade);
       } else {
         return res.status(404).send({ error: `Cannot find grade with 'gradeId'${gradeId}` });
