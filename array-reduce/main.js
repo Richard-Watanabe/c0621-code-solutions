@@ -66,4 +66,4 @@ const composite = (accumulator, currentValue) => {
   return object;
 };
 
-console.log(traits.reduce(composite));
+console.log(traits.reduce(composite, {}));
