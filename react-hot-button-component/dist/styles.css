@@ -1,0 +1,32 @@
+button {
+  width: 8rem;
+  height: 40px;
+}
+
+.white-text {
+  color: white;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.lavender {
+  background-color: rgb(172, 172, 245);
+}
+
+.red-orange {
+  background-color: rgb(255, 81, 0);
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.white {
+  background-color: white;
+}
