@@ -12,11 +12,11 @@ const allLanguage = [
     id: '2',
     name: 'Cascading Style Sheets',
     description: `Cascading Style Sheets (CSS) is a style sheet language used for
-  describing the presentation of a document written in a markup language like HTML.
-  CSS is a cornerstone technology of the World Wide Web alongside HTML and JavaScript.`
+    describing the presentation of a document written in a markup language like HTML.
+    CSS is a cornerstone technology of the World Wide Web alongside HTML and JavaScript.`
   },
   {
-    id: '003',
+    id: '3',
     name: 'JavaScript',
     description: `JavaScript, often abbreviated JS, is a high-level, interpreted
     programming language that conforms to the ECMAScript specification. JavaScript
@@ -29,39 +29,34 @@ class Accordion extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      openLanguage: ''
     };
     this.toggle = this.toggle.bind(this);
   }
 
-  toggle() {
-    if (this.state.isOpen === false) {
+  toggle(event) {
+    const clickedLanguage = event.target.getAttribute('clicked');
+    if (clickedLanguage === this.state.openLanguage) {
       this.setState({
-        isOpen: true
+        openLanguage: ''
       });
     } else {
       this.setState({
-        isOpen: false
+        openLanguage: clickedLanguage
       });
     }
   }
 
   render() {
-    if (this.state.isOpen === false) {
-      const LanguageList = allLanguage.map(language =>
-        <li className="no-deco" onClick={this.toggle} key={language.id}>{language.name}</li>
-      );
-      return <ul>{LanguageList}</ul>;
-    } else {
-      const LanguageList = allLanguage.map(language =>
-        <li onClick={this.toggle} key={language.id}>{language.name}
-          <div>
-            {language.description}
-          </div>
+    const LanguageList = allLanguage.map(language => {
+      return (
+        <li key={language.id}>
+          <li className='topic' clicked={language.name} onClick={this.toggle}>{language.name}</li>
+          <li className={`${(language.name === this.state.openLanguage) ? '' : 'hide'} desc`}>{language.description}</li>
         </li>
       );
-      return <ul>{LanguageList}</ul>;
-    }
+    });
+    return <ul>{LanguageList}</ul>;
   }
 }
 
