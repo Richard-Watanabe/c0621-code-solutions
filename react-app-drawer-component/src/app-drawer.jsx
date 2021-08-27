@@ -24,11 +24,19 @@ class AppDrawer extends React.Component {
 
   render() {
     if (this.state.isOpen === false) {
-      return <i className="fas fa-bars" onClick={this.handleClickOpen}></i>;
+      return <div>
+        <div className="center">
+          <i className="fas fa-child"></i>
+        </div>
+        <i className="fas fa-bars" onClick={this.handleClickOpen}></i>
+      </div>;
     } else {
       return <div>
-               <div className="menu">
-                 <div className="overlay" onClick={this.handleClickClose}>
+              <div className="center">
+                <i className="fas fa-child"></i>
+              </div>
+              <div className="menu">
+                <div className="overlay" onClick={this.handleClickClose}>
                    <h2 className="menu-title margin-bottom inline-block">Menu</h2><br></br>
                    <a href='#' className="margin-bottom cursor inline-block">About</a><br></br>
                    <a href='#' className="margin-bottom cursor inline-block">Get Started</a><br></br>

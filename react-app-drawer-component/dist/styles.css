@@ -1,6 +1,8 @@
-i {
+i.fa-bars {
   font-size: 2rem;
   margin: 1rem;
+  position: relative;
+  bottom: 4rem;
 }
 
 .overlay {
@@ -19,7 +21,7 @@ i {
   padding-left: 1rem;
   border: 2px solid black;
   position: relative;
-  bottom: 0.5rem;
+  bottom: 4.5rem;
   right: 0.5rem;
 }
 
@@ -43,4 +45,14 @@ i {
   color: black;
   position: relative;
   right: 15rem;
+}
+
+.fa-child {
+  color: pink;
+  font-size: 4rem;
+}
+
+.center {
+  justify-content: center;
+  display: flex;
 }
