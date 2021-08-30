@@ -22,7 +22,11 @@ img {
 }
 
 .angle {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+.angle:active {
+  transform: scale(0.9);
 }
 
 .image-container {
@@ -30,14 +34,4 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.fa-angle-right,
-.fa-angle-left {
-  font-size: 3rem;
-}
-
-.fa-angle-right:active,
-.fa-angle-left:active {
-  transform: scale(0.9);
 }
