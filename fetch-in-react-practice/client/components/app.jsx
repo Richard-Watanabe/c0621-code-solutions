@@ -83,7 +83,7 @@ export default class App extends React.Component {
      * TIP: Be sure to SERIALIZE the updates in the body with JSON.stringify()
      * And specify the "Content-Type" header as "application/json"
      */
-    const allTodos = this.state.todos;
+    const allTodos = [...this.state.todos];
     function findIndex() {
       for (let i = 0; i < allTodos.length; i++) {
         if (todoId === allTodos[i].todoId) {
