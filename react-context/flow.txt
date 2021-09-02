@@ -1,0 +1,49 @@
+1. User can sign up
+
+To sign up, the user must first press the "Register Now" link or the "Sign Up" button
+in the navbar. Once, the user clicks either of them, the state of "this.state.route.path"
+of the App class will change to "sign-up", which will re-render the page. When the user
+enters a username and password and presses the to register button to make an account,
+the entered values will be passed to the fetch function with the POST method, which will
+trigger the "app.post" method in the server with the routh path of "/api/auth/sign-up". In the server, argon2 will hash the
+received password, and the SQL will store the username and hashed password to the
+database. Once the username and hashed password is saved, the fetch function in auth-form
+will change the window.location.hash to "sign-in" which will re-set the state of
+"this.state.route.path" and cause the page to re-render to the "sign-in" page.
+
+2. User can sign in
+
+To sign in, the user must click on the "sign-in" button or the "sign-in-instead" link,
+which will change "this.state.route.path" to "sign-in", and re-render the page. Once the user
+inputs a username and password and presses "Log in", the fetch method in auth-form.jsx
+will take the values of the username and password. In auth-form.jsx, the first argument of
+the fetch method includes a template literal with a JavaScript expression to handle submits
+for both "sign-up" and "sign-ins". Once the username and password is submitted log-in,
+the fetch method takes the information as req.body to server with the app.post method with the
+route path of "/api/auth/sign-in". Once the server checks that the username and password
+are valid, the server will run the SQL to which will find the userId and hashedPassword
+from the database where "username" matches the username that was inputted in the sign-in
+form. Once there is a match, argon2.verify will check to see if the hashedPassword and the
+password are matching. If it is matching, it will generate a token and respond to the
+client with the userId and username. An object containing the userId and username is then
+passed to App.jsx where the token information will be saved into the localStorage. Once that is
+done, the state of user is re-set which will re-render the page to after the user has
+signed in.
+
+3. User can stay signed in(even if they refresh the page).
+
+Once the page renders, the componentDidMount method in app.jsx runs to check if there is a
+token saved in the localstorage with "window.localStorage.getItem('react-context-jtw')".
+If a token exists, the token will be passed to the decodeToken function where the token
+will be split at periods, and the return will go through the atob function where the token
+will be parsed to JSON and assinged to payload. Once the payload is returned from the function,
+the decoded token gets assigend to "this.state.user" of the App component, which will keep
+the user logged in.
+
+4. User can sign out.
+
+To sign out, the user must click on the sign out button which triggers the handleSignOut method
+in the App component. The method removes the stored token that was in the localstorage, and sets
+"this.state.user" to null which will trigger the page to re-render. Once re-rendered, the user
+will come back to the sign-in page since there is no truthy value for "this.state.user" and the
+hash routing is set to "#sign-in".
